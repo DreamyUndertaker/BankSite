@@ -1,0 +1,370 @@
+.contentWrapper{
+    display: grid;
+    grid-template-areas: "financeWrapper";
+}
+
+.financeWrapper{
+    display: grid;
+    grid-template-areas: 
+    "financeHeader"
+    "financeWalletWrapper"
+    "financeContributionWrapper"
+    "financeMetallBillsWrapper"
+    "financeCreditWrapper"
+    "financeGoalsWrapper"
+    "financeInsuranceWrapper"
+    "financePensionsWrapper"
+    "financeInvestmentsWrapper"
+    "financeDepotWrapper";
+    grid-area: financeWrapper;
+    max-width: 300px;
+    background-color:darkgray;
+    padding-left: 10px;
+    padding-right: 10px;;
+}
+.financeHeader{
+    display: grid;
+    grid-template-areas: 
+    "financeHeader-h"
+    "financeHeader-p";
+    grid-area: financeHeader;
+}
+    .financeHeader-h{
+        grid-area: financeHeader-h;
+    }
+    .financeHeader-p{
+        grid-area: financeHeader-p;
+    }
+
+.financeWalletWrapper{
+    display:grid;
+    grid-template-areas: 
+    "financeWallet-h financeWallet-rollUpImg financeWallet-addImg"
+    "financeWalletBalanceWrapper financeWalletBalanceWrapper financeWalletBalanceWrapper";
+    grid-area: financeWalletWrapper;
+    
+}
+    .financeWallet-h{
+        grid-area: financeWallet-h;
+    }
+    .financeWallet-rollUpImg{
+        grid-area: financeWallet-rollUpImg;
+        text-align: center;
+        align-self: center;
+        justify-self: left;;
+        padding-top: 20px;
+    }
+    .financeWallet-addImg{
+        grid-area: financeWallet-addImg;
+        text-align: center;
+        align-self: center;
+        justify-self: right;
+        padding-top: 20px;
+    }
+    .financeWalletBalanceWrapper{
+        display: grid;
+        grid-template-areas: 
+        "financeWalletCards-logoMasterCard financeWalletBalance-amountMasterCard"
+        "financeWalletCards-logoMasterCard financeWalletBalance-cardNameMasterCard"
+        "financeWalletCards-logoVisa financeWalletBalance-amountVisa"
+        "financeWalletCards-logoVisa financeWalletBalance-cardNameVisa";
+        grid-template-rows: 20px 30px 30px 30px;
+        grid-area: financeWalletBalanceWrapper;
+    }
+        .financeWalletCards-logoMasterCard{
+            grid-area: financeWalletCards-logoMasterCard;
+            text-align: center;
+            align-self: center;
+            justify-self: center;
+            padding-top: 30px;
+        }
+        .financeWalletCards-logoVisa{
+            grid-area: financeWalletCards-logoVisa;
+            text-align: center;
+            align-self: center;
+            justify-self: center;
+            padding-top: 30px;
+        }
+        .financeWalletBalance-amountMasterCard{
+            grid-area: financeWalletBalance-amountMasterCard;
+        }
+        .financeWalletBalance-amountVisa{
+            grid-area: financeWalletBalance-amountVisa;
+        }
+        .financeWalletBalance-cardNameMasterCard{
+            grid-area: financeWalletBalance-cardNameMasterCard;
+        }
+        .financeWalletBalance-cardNameVisa{
+            grid-area: financeWalletBalance-cardNameVisa;
+        }
+
+.financeContributionWrapper{
+    display: grid;
+    grid-template-areas: 
+    "financeContribution-h financeContribution-rollUpImg financeContribution-addImg"
+    "financeContribution-icon financeWalletAbout-h financeWalletAbout-h"
+    "financeContribution-icon financeContribution-about financeContribution-about";
+    grid-template-rows: 40px 20px 50px;
+    grid-area: financeContributionWrapper;
+    
+}
+    .financeContribution-h{
+        grid-area: financeContribution-h;
+        width: 150px;
+    }
+    .financeContribution-icon{
+        grid-area: financeContribution-icon;
+        text-align: center;
+        align-self: center;
+        justify-self: center;;
+        padding-top: 30px;
+        padding-right: 45px;
+    }
+    .financeWalletAbout-h{
+        grid-area: financeWalletAbout-h;
+    }
+    .financeContribution-rollUpImg{
+        grid-area: financeContribution-rollUpImg;
+        text-align: center;
+        align-self: center;
+        justify-self: left;;
+        padding-top: 25px;
+    }
+    .financeContribution-addImg{
+        grid-area: financeContribution-addImg;
+        text-align: center;
+        align-self: center;
+        justify-self: right;
+        padding-top: 25px;
+    }
+    .financeContribution-about{
+        grid-area: financeContribution-about;
+    }
+
+.financeMetallBillsWrapper{
+    display: grid;
+    grid-template-areas:
+    "financeMetallBills-h financeMetallBills-rollUpImg financeMetallBills-addImg"
+    "financeMetallBills-icon financeMetallBillsAbout-h financeMetallBillsAbout-h"
+    "financeMetallBills-icon financeMetallBills-about financeMetallBills-about";
+    grid-template-rows: 40px 40px 50px;
+    grid-area: financeMetallBillsWrapper;
+}
+    .financeMetallBills-h{
+        grid-area: financeMetallBills-h;
+        
+    }
+    .financeMetallBillsAbout-h{
+        grid-area: financeMetallBillsAbout-h;
+        width: 150px;
+    }
+    .financeMetallBills-icon{
+        grid-area: financeMetallBills-icon;
+        text-align: center;
+        align-self: center;
+        justify-self: center;;
+        padding-top: 30px;
+        padding-right: 28px;
+    }
+    .financeMetallBills-h{
+        grid-area: financeMetallBills-h;
+    }
+    .financeMetallBills-rollUpImg{
+        grid-area: financeMetallBills-rollUpImg;
+        text-align: center;
+        align-self: center;
+        justify-self: left;;
+        padding-top: 25px;
+    }
+    .financeMetalBills-addImg{
+        grid-area: financeMetallBills-addImg;
+        text-align: center;
+        align-self: center;
+        justify-self: right;
+        padding-top: 25px;
+    }
+    .financeMetallBills-about{
+        grid-area: financeMetallBills-about;
+    }
+
+.financeCreditWrapper{
+    display: grid;
+    grid-template-areas: "financeMetallBills-h financeCredit-rollUpImg financeCredit-addImg";
+    grid-area: financeCreditWrapper;
+}
+    .financeMetallBills-h{
+        grid-area: financeMetallBills-h;
+    
+    }
+    .financeCredit-rollUpImg{
+        grid-area: financeCredit-rollUpImg;
+        text-align: center;
+        align-self: center;
+        justify-self: left;;
+        padding-top: 10px;
+    }
+    .financeCredit-addImg{
+        grid-area: financeCredit-addImg;
+        text-align: center;
+        align-self: center;
+        justify-self: right;
+        padding-top: 10px;
+    }
+
+.financeGoalsWrapper{
+    display: grid;
+    grid-template-areas:
+    "financeGoals-h financeGoals-rollUpImg financeGoals-addImg"
+    "financeGoalsAboutWrapper financeGoalsAboutWrapper financeGoalsAboutWrapper"
+    "financeGoalsAboutWrapper financeGoalsAboutWrapper financeGoalsAboutWrapper";
+    grid-template-rows: 40px 10px 50px;
+    grid-area: financeGoalsWrapper;
+}
+    .financeGoals-h{
+        grid-area: financeGoals-h;
+    }
+    .financeGoals-rollUpImg{
+        grid-area: financeGoals-rollUpImg;
+        text-align: center;
+        align-self: center;
+        justify-self: left;;
+        padding-top: 25px;
+    }
+    .financeGoals-addImg{
+        grid-area: financeGoals-addImg;
+        text-align: center;
+        align-self: center;
+        justify-self: right;
+        padding-top: 25px;
+    }
+    .financeGoalsAboutWrapper{
+        grid-area: financeGoalsAboutWrapper;
+        display: grid;
+        grid-template-areas: 
+        "financeGoalsAbout-logo financeGoalsAbout-h"
+        "financeGoalsAbout-logo financeGoalsAbout-about";
+        grid-template-rows: 20px 40px;
+        padding-left: 40px;
+    }
+        .financeGoalsAbout-logo{
+            grid-area: financeGoalsAbout-logo;
+            text-align: center;
+            align-self: center;
+            justify-self: center;;
+            padding-top: 30px;
+            padding-right: 28px;
+        }
+        .financeGoalsAbout-h{
+            grid-area: financeGoalsAbout-h;
+        }
+        .financeGoalsAbout-about{
+            grid-area: financeGoalsAbout-about;
+        }
+
+.financeInsuranceWrapper{
+    display: grid;
+    grid-template-areas: "financeInsurance-h financeInsurance-rollUpImg financeInsurance-addImg";
+    grid-area: financeInsuranceWrapper;
+}
+
+    .financeInsurance-h{
+        grid-area: financeInsurance-h;
+    }
+    .financeInsurance-rollUpImg{
+        grid-area: financeInsurance-rollUpImg;
+        text-align: center;
+        align-self: center;
+        justify-self: left;;
+        padding-top: 10px;
+    }
+    .financeInsurance-addImg{
+        grid-area: financeInsurance-addImg;
+        text-align: center;
+        align-self: center;
+        justify-self: right;
+        padding-top: 10px;
+    }
+
+.financePensionsWrapper{
+    display: grid;
+    grid-template-areas: "financePensions-h financePensions-rollUpImg financePensions-addImg";
+    grid-area: financePensionsWrapper;
+}
+
+    .financePensions-h{
+        grid-area: financePensions-h;
+    }
+    .financePensions-rollUpImg{
+        grid-area: financePensions-rollUpImg;
+        text-align: center;
+        align-self: center;
+        justify-self: left;;
+        padding-top: 10px;
+    }
+    .financePensions-addImg{
+        grid-area: financePensions-addImg;
+        text-align: center;
+        align-self: center;
+        justify-self: right;
+        padding-top: 10px;
+    }
+
+.financeInvestmentsWrapper{
+    display: grid;
+    grid-template-areas: "financeInvestments-h financeInvestments-rollUpImg financeInvestments-addImg";
+    grid-area: financeInvestmentsWrapper;
+}
+
+    .financeInvestments-h{
+        grid-area: financeInvestments-h;
+    }
+    .financeInvestments-rollUpImg{
+        grid-area: financeInvestments-rollUpImg;
+        text-align: center;
+        align-self: center;
+        justify-self: left;;
+        padding-top: 10px;
+    }
+    .financeInvestments-addImg{
+        grid-area: financeInvestments-addImg;
+        text-align: center;
+        align-self: center;
+        justify-self: right;
+        padding-top: 10px;
+    }
+
+.financeDepotWrapper{
+    display: grid;
+    grid-template-areas: 
+    "financeDepot-h financeDepot-rollUpImg financeDepot-addImg"
+    "financeDepot-icon financeDepotAbout-h financeDepotAbout-h";
+    grid-area: financeDepotWrapper;
+}
+    .financeDepot-h{
+        grid-area: financeDepot-h;
+    }
+    .financeDepot-rollUpImg{
+        grid-area: financeDepot-rollUpImg;
+        text-align: center;
+        align-self: center;
+        justify-self: left;;
+        padding-top: 10px;
+    }
+    .financeDepot-addImg{
+        grid-area: financeDepot-addImg;
+        text-align: center;
+        align-self: center;
+        justify-self: right;
+        padding-top: 10px;
+    }
+    .financeDepot-icon{
+        grid-area: financeDepot-icon;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+        padding-right: 28px;
+        padding-left: 40px;
+    }
+    .financeDepotAbout-h{
+        grid-area: financeDepotAbout-h;
+    }
