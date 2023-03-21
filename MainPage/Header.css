@@ -8,16 +8,19 @@ body{
 }
 
 .headerSearchImg-button{
-    background: url("../Materials/images/Search.png") no-repeat top right;
+    background: url("../Materials/images/Search.png") no-repeat center;
     height: 33px;
     width: 33px;
-    
+    border: 0px;
 }
+    .headerSearchImg-button:hover{
+        box-shadow: 0 0 12px #6633FF;
+    }
 
 .headerWrapper{
     display: grid;
-    grid-template-areas: "headerLogoWrapper headerNavBarWrapper headerSearchWrapper headerAccountWrapper";
-    
+    grid-template-areas: 
+    "headerLogoWrapper headerNavBarWrapper headerSearchWrapper headerAccountWrapper headerExit-button";
     background-color:darkcyan;
     text-align: center;
     align-self: center;
@@ -36,77 +39,91 @@ body{
     display: grid;
     grid-template-areas: "headerNavBar-mainLink headerNavBar-paymentLink headerNavBar-historyLink";
     grid-gap: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding-right: 200px;
 }
-.headerNavBar-mainLink{
-    grid-area: headerNavBar-mainLink;
-    border: 2px solid transparent;
-    border-radius: 20px;
-    background-color: rgb(111, 112, 51);
-    text-align: center;
-    align-self: center;
-    
-}
-.headerNavBar-mainLink a{ text-decoration: none; color: white !important}
-    .headerNavBar-mainLink:hover{
-        border: 2px solid red;
+    .headerNavBar-mainLink{
+        grid-area: headerNavBar-mainLink;
+        border: 2px solid transparent;
+        border-radius: 20px;
+        background-color: rgb(111, 112, 51);
+        text-align: center;
+        align-self: center;
+
     }
-.headerNavBar-paymentLink{
-    grid-area: headerNavBar-paymentLink;
-    border: 2px solid transparent;
-    border-radius: 20px;
-    background-color: rgb(111, 112, 51);
-    text-align: center;
-    align-self: center;
-}
-.headerNavBar-paymentLink a{ text-decoration: none; color: white !important}
-    .headerNavBar-paymentLink:hover{
-        border: 2px solid red;
+    .headerNavBar-mainLink a{ text-decoration: none; color: white !important}
+        .headerNavBar-mainLink:hover{
+            border: 2px solid red;
+        }
+    .headerNavBar-paymentLink{
+        grid-area: headerNavBar-paymentLink;
+        border: 2px solid transparent;
+        border-radius: 20px;
+        background-color: rgb(111, 112, 51);
+        text-align: center;
+        align-self: center;
     }
-.headerNavBar-historyLink{
-    grid-area: headerNavBar-historyLink;
-    border: 2px solid transparent;
-    border-radius: 20px;
-    background-color: rgb(111, 112, 51);
-    text-align: center;
-    margin-right: 10px;
-    align-self: center;
-}
-.headerNavBar-historyLink a{ text-decoration: none; color: white !important}
-    .headerNavBar-historyLink:hover{
-        border: 2px solid red;
+    .headerNavBar-paymentLink a{ text-decoration: none; color: white !important}
+        .headerNavBar-paymentLink:hover{
+            border: 2px solid red;
+        }
+    .headerNavBar-historyLink{
+        grid-area: headerNavBar-historyLink;
+        border: 2px solid transparent;
+        border-radius: 20px;
+        background-color: rgb(111, 112, 51);
+        text-align: center;
+        margin-right: 10px;
+        align-self: center;
     }
+    .headerNavBar-historyLink a{ text-decoration: none; color: white !important}
+        .headerNavBar-historyLink:hover{
+            border: 2px solid red;
+        }
 
 .headerSearchWrapper{
     grid-area: headerSearchWrapper;
     display: grid;
     grid-template-areas: "headerSearch-inputArea headerSearch-Img";
-    grid-template-columns: max-content;
+    grid-template-columns: 190px 30px;
     grid-gap: 10px;
-    max-width: 100px;
 }
-.headerSearch-inputArea{
-    grid-area: headerSearch-inputArea;
-    max-width: 180px;
-    align-self: center;
-}
-.headerSearch-Img{
-    grid-area: headerSearch-Img;
-    max-width: 40px;
-}
+    .headerSearch-inputArea{
+        grid-area: headerSearch-inputArea;
+        align-self: left;
+    }
+    .headerSearch-Img{
+        grid-area: headerSearch-Img;
+    }
 
 
 .headerAccountWrapper{
     grid-area: headerAccountWrapper;
     display: grid;
     grid-template-areas: "headerAccountWrapper-Img headerAccountWrapper-Name";
-    grid-template-columns: 0.1fr;
-    align-self: center;
+    grid-template-columns: 30px 100px;
+    align-self: top;
+    padding-left: 80px;
 }
-.headerAccountWrapper-Img{
-    grid-area: headerAccountWrapper-Img;
+    .headerAccountWrapper-Img{
+        grid-area: headerAccountWrapper-Img;
+        align-self: top;
+    }
+    .headerAccountWrapper-Name{
+        grid-area: headerAccountWrapper-Name;
+        padding-top: 5px;
+    }
+
+.headerExitWrapper{
+    margin-bottom: 10px;
 }
-.headerAccountWrapper-Name{
-    grid-area: headerAccountWrapper-Name;
+.headerExit-button{
+    grid-area: headerExit-button;
+    background:url("../Materials/images/ExitButton.png") no-repeat center;
+    border: 0px;
+    height: 33px;
+    width: 33px;
 }
+    .headerExit-button:hover{
+        box-shadow: 0 0 12px #6633FF;
+    }
