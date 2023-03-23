@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.massContent{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.header{
+    display: flex;
+    justify-content:center;
+    background-color: #B2B6E1;
+    align-items:center;
+
+}
+
+.headerNavBar{
+    display: flex;
+}
+
+.headerSearch{
+    display: flex;
+}
+
+.headerAccount{
+    display: flex;
+}
+
+* {box-sizing: border-box;}
+
+.headerSearch input {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  border: 2px solid #7BA7AB;
+  border-radius: 5px;
+  outline: none;
+  background: #F9F0DA;
+  color: #9E9C9C;
+}
+.headerSearch button {
+ 
+  top: 0;
+  right: 0px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: #7BA7AB;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.headerSearch button:before {
+  font-size: 16px;
+  color: #F9F0DA;
+}
+
+
+.financeWrapper{
+  margin-left: 8em;
+  margin-top: 3em;
+}
