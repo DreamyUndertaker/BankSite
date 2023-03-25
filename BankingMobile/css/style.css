@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    margin: 0px;
+    width: 390px;
+    height: 844px;
+    background: linear-gradient(to top ,#6189E6 , #CFD5E3);
+    background-repeat: no-repeat;
+    font-family: "Golos Text";
+    
+}
+.transfer {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10%;
+    font-size: 26px;
+    color: #133E5E;
+}
+.contentPaymentsWrapper{
+    grid-area: contentPaymentsWrapper;
+    display: grid;
+    grid-template-areas: 
+    "contentPaymentsQiwiWrapper contentPaymentsIconWrapper contentServicesWrapper"
+    "contentTranslationWrapper contentTranslationWrapper contentTranslationWrapper";
+    grid-template-columns: 150px 150px 400px;
+    grid-template-rows: 100px 200px;
+    padding-top: 50px;
+    padding-left: 50px;
+    background-color:gray;
+}
+    .contentPaymentsQiwiWrapper{
+        grid-area: contentPaymentsQiwiWrapper;
+    }
+    .contentPaymentsIconWrapper{
+        grid-area: contentPaymentsIconWrapper;
+    }
+    .contentServicesWrapper{
+        grid-area: contentServicesWrapper;
+    }
+
+.contentTranslationWrapper{
+    display: grid;
+    grid-area: contentTranslationWrapper;
+    grid-template-areas: 
+    "contentTranslation-h contentTranslation-h"
+    "contentTranslationClientWrapper contentTranslationYourNumberWrapper"
+    "contentTranslationOtherPeopleWrapper contentTranslationOtherCountyWrapper";
+    grid-template-rows: 100px 70px 50px;
+    padding-top: 70px;
+}
+    .contentTranslation-h{
+        grid-area: contentTranslation-h;
+    }
+        .contentTranslationClientWrapper{
+            display: grid;
+            grid-template-areas: 
+            "contentTranslationClient-icon contentTranslationClient-h"
+            "contentTranslationClient-icon contentTranslationClient-p";
+            grid-template-rows: 20px 20px;
+            grid-template-columns: 50px 200px;
+            grid-area: contentTranslationClientWrapper;
+        }
+            .contentTranslationClient-icon{
+                grid-area: contentTranslationClient-icon;
+                padding-top: 22px;
+                
+            }
+            .contentTranslationClient-h{
+                grid-area: contentTranslationClient-h;
+            }
+            .contentTranslationClient-p{
+                grid-area: contentTranslationClient-p;
+            }
+
+        .contentTranslationYourNumberWrapper{
+            display: grid;
+            grid-template-areas: 
+            "contentTranslationYourNumber-icon contentTranslationYourNumber-h"
+            "contentTranslationYourNumber-icon contentTranslationYourNumber-p";
+            grid-template-rows: 20px 20px;
+            grid-template-columns: 50px 200px;
+            grid-area: contentTranslationYourNumberWrapper;
+        }
+            .contentTranslationYourNumber-icon{
+                grid-area: contentTranslationYourNumber-icon;
+                padding-top: 22px;
+            }
+            .contentTranslationYourNumber-h{
+                grid-area: contentTranslationYourNumber-h;
+            }
+            .contentTranslationYourNumber-p{
+                grid-area: contentTranslationYourNumber-p;
+            }
+
+        .contentTranslationOtherPeopleWrapper{
+            display: grid;
+            grid-template-areas: 
+            "contentTranslationOtherPeople-icon contentTranslationOtherPeople-h"
+            "contentTranslationOtherPeople-icon contentTranslationOtherPeople-p";
+            grid-template-rows: 20px 20px;
+            grid-template-columns: 50px 200px;
+            grid-area: contentTranslationOtherPeopleWrapper;
+        }
+            .contentTranslationOtherPeople-icon{
+                grid-area: contentTranslationOtherPeople-icon;
+                padding-top: 22px;
+            }
+            .contentTranslationOtherPeople-h{
+                grid-area: contentTranslationOtherPeople-h;
+            }
+            .contentTranslationOtherPeople-p{
+                grid-area: contentTranslationOtherPeople-p;
+            }
+
+        .contentTranslationOtherCountyWrapper{
+            display: grid;
+            grid-template-areas: 
+            "contentTranslationOtherCounty-icon contentTranslationOtherCounty-h"
+            "contentTranslationOtherCounty-icon contentTranslationOtherCounty-p";
+            grid-template-rows: 20px 20px;
+            grid-template-columns: 50px 200px;
+            grid-area: contentTranslationOtherCountyWrapper;
+        }
+            .contentTranslationOtherCounty-icon{
+                grid-area: contentTranslationOtherCounty-icon;
+                padding-top: 22px;
+            }
+            .contentTranslationOtherCounty-h{
+                grid-area: contentTranslationOtherCounty-h;
+            }
+            .contentTranslationOtherCounty-p{
+                grid-area: contentTranslationOtherCounty-p;
+            }
+            
+.content_search {
+    display: flex;
+    margin-top: 100%;
+}
+.content:after {content:""; clear:both; display:table}
+.content form {
+    display: flex;
+    width: 100%;
+    margin: 25px 0px 0px 0px;
+    justify-content: center;
+}
+.content_search input {
+    width: 305px;
+    height: 42px;
+    padding-left: 15px;
+    border-radius: 42px;
+    border: 2px solid #7788B770;
+    background: #8497cd;;
+    outline: none;
+    position: relative;
+    transition: .3s linear;
+}
+
+.content_search input::-webkit-input-placeholder {
+    color: #FFFFFF80;
+}
+
+.content_search button {
+    display: flex;
+    width: 19px;
+    height: 42px;
+    background: none;
+    border: none;
+    position: absolute;
+    align-items: center;
+    margin: 0px 0px 0px 250px;
+}
+.content_search button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    color: #324b4e;
+}
+
