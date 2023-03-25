@@ -15,3 +15,51 @@
     border-radius: 20px;
     padding: 1em;
 }
+
+
+
+.graphicStatistics-General a{
+    color: #4A861C;
+}
+
+.sum{
+    font-size: 14px;
+    font-weight: bold;
+}
+.order{
+    font-size: 9px;
+}
+
+.graphicStatistics-scale{
+    display: flex;
+    justify-content:center;
+    align-items:end;
+    margin-left: 5px;
+}
+
+.graphicStatistics-scale div{
+    margin-right: 3px;
+}
+
+.first div{
+    display: flex;
+    justify-content:center;
+    height: 47px;
+    width: 10px;
+    background: #ECB0C7;
+    border-radius: 20px;
+}
+
+.second div{
+    height: 25px;
+    width: 10px;
+    background: #ECB0C7;
+    border-radius: 20px;
+}
+
+.third div{
+    height: 15px;
+    width: 10px;
+    background: #ECB0C7;
+    border-radius: 20px;
+}
