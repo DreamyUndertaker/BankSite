@@ -1,6 +1,7 @@
 .contentWrapper{
     display: grid;
-    grid-template-areas: "financeWrapper";
+    grid-template-areas: "financeWrapper contentPaymentsWrapper";
+    grid-template-columns: 300px auto;
 }
 
 .financeWrapper{
@@ -373,8 +374,10 @@
     grid-area: contentPaymentsWrapper;
     display: grid;
     grid-template-areas: 
-    "contentPaymentsQiwiWrapper contentPaymentsIconWrapper contentServicesWrapper";
+    "contentPaymentsQiwiWrapper contentPaymentsIconWrapper contentServicesWrapper"
+    "contentTranslationWrapper contentTranslationWrapper contentTranslationWrapper";
     grid-template-columns: 150px 150px 400px;
+    grid-template-rows: 100px 200px;
     padding-top: 50px;
     padding-left: 50px;
     background-color:gray;
@@ -391,9 +394,13 @@
 
 .contentTranslationWrapper{
     display: grid;
+    grid-area: contentTranslationWrapper;
     grid-template-areas: 
-    "contentTranslation-h"
-    "contentTranslationClientWrapper";
+    "contentTranslation-h contentTranslation-h"
+    "contentTranslationClientWrapper contentTranslationYourNumberWrapper"
+    "contentTranslationOtherPeopleWrapper contentTranslationOtherCountyWrapper";
+    grid-template-rows: 100px 70px 50px;
+    padding-top: 70px;
 }
     .contentTranslation-h{
         grid-area: contentTranslation-h;
@@ -401,16 +408,80 @@
         .contentTranslationClientWrapper{
             display: grid;
             grid-template-areas: 
-            "contentTranslationClient contentTranslationClient-h"
-            "contentTranslationClient contentTranslationClient-p";
+            "contentTranslationClient-icon contentTranslationClient-h"
+            "contentTranslationClient-icon contentTranslationClient-p";
+            grid-template-rows: 20px 20px;
+            grid-template-columns: 50px 200px;
             grid-area: contentTranslationClientWrapper;
         }
             .contentTranslationClient-icon{
                 grid-area: contentTranslationClient-icon;
+                padding-top: 22px;
+                
             }
             .contentTranslationClient-h{
                 grid-area: contentTranslationClient-h;
             }
             .contentTranslationClient-p{
                 grid-area: contentTranslationClient-p;
+            }
+
+        .contentTranslationYourNumberWrapper{
+            display: grid;
+            grid-template-areas: 
+            "contentTranslationYourNumber-icon contentTranslationYourNumber-h"
+            "contentTranslationYourNumber-icon contentTranslationYourNumber-p";
+            grid-template-rows: 20px 20px;
+            grid-template-columns: 50px 200px;
+            grid-area: contentTranslationYourNumberWrapper;
+        }
+            .contentTranslationYourNumber-icon{
+                grid-area: contentTranslationYourNumber-icon;
+                padding-top: 22px;
+            }
+            .contentTranslationYourNumber-h{
+                grid-area: contentTranslationYourNumber-h;
+            }
+            .contentTranslationYourNumber-p{
+                grid-area: contentTranslationYourNumber-p;
+            }
+
+        .contentTranslationOtherPeopleWrapper{
+            display: grid;
+            grid-template-areas: 
+            "contentTranslationOtherPeople-icon contentTranslationOtherPeople-h"
+            "contentTranslationOtherPeople-icon contentTranslationOtherPeople-p";
+            grid-template-rows: 20px 20px;
+            grid-template-columns: 50px 200px;
+            grid-area: contentTranslationOtherPeopleWrapper;
+        }
+            .contentTranslationOtherPeople-icon{
+                grid-area: contentTranslationOtherPeople-icon;
+                padding-top: 22px;
+            }
+            .contentTranslationOtherPeople-h{
+                grid-area: contentTranslationOtherPeople-h;
+            }
+            .contentTranslationOtherPeople-p{
+                grid-area: contentTranslationOtherPeople-p;
+            }
+
+        .contentTranslationOtherCountyWrapper{
+            display: grid;
+            grid-template-areas: 
+            "contentTranslationOtherCounty-icon contentTranslationOtherCounty-h"
+            "contentTranslationOtherCounty-icon contentTranslationOtherCounty-p";
+            grid-template-rows: 20px 20px;
+            grid-template-columns: 50px 200px;
+            grid-area: contentTranslationOtherCountyWrapper;
+        }
+            .contentTranslationOtherCounty-icon{
+                grid-area: contentTranslationOtherCounty-icon;
+                padding-top: 22px;
+            }
+            .contentTranslationOtherCounty-h{
+                grid-area: contentTranslationOtherCounty-h;
+            }
+            .contentTranslationOtherCounty-p{
+                grid-area: contentTranslationOtherCounty-p;
             }
