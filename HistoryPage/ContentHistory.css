@@ -1,0 +1,17 @@
+.mainСontent{
+    display: flex;
+    flex-direction: column;
+}
+
+.statistics{
+    display: flex;
+    flex-direction: column;
+}
+
+.graphicStatistics{
+    display: flex;
+    flex-direction: row;
+    background: #C1C4E6;
+    border-radius: 20px;
+    padding: 1em;
+}
