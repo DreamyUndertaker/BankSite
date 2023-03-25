@@ -1,28 +1,73 @@
+
 body {
     margin: 0px;
-    width: 428px;
-    height: 967px;
-    background-image: url(../src/images/background.png);
+    width: 390px;
+    height: 844px;
+    background: linear-gradient(to top ,#6189E6 , #CFD5E3);
     background-repeat: no-repeat;
     font-family: "Golos Text";
+    
 }
 
-.buttonicon_a {
-    text-decoration: none;
-    color: #1C253B;
+h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10%;
+    font-size: 26px;
+    color: #133E5E;
 }
+.contentTranslationWrapper{
+    display: grid;
+    grid-template-areas: 
+    "contentTranslation-h"
+    "contentTranslationClientWrapper";
+    
+}
+    .contentTranslation-h{
+        grid-area: contentTranslation-h;
+    }
+        .contentTranslationClientWrapper{
+           
+            grid-template-areas: 
+            "contentTranslationYourNumber-icon contentTranslationClient-h"
+            "contentTranslationYourNumber-icon contentTranslationClient-p";
+            grid-area: contentTranslationClientWrapper;
+        }
+            .contentTranslationClient-icon{
+                grid-area: contentTranslationClient-icon;
+            }
+            .contentTranslationClient-h{
+                grid-area: contentTranslationClient-h;
+            }
+            .contentTranslationClient-p{
+                grid-area: contentTranslationClient-p;
+            }
 
-.header_search {
+.contentTranslationClientWrapper {
+    background: linear-gradient(to top right ,#767DC8 , #CFD5E3);
+    grid-template-areas: "contentTranslationYourNumber-icon contentTranslationClient-h";
+}
+.contentTranslationYourNumberWrapper {
+    background: linear-gradient(to top right,#767DC8 , #CFD5E3);
+}
+.contentTranslationOtherPeopleWrapper {
+    background: linear-gradient(to top right,#767DC8 , #CFD5E3);
+}
+.contentTranslationOtherCountyWrapper {
+    background: linear-gradient(to top right ,#767DC8 , #CFD5E3);
+}
+.content_search {
     display: flex;
+    margin-top: 10%;
 }
-.header_search:after {content:""; clear:both; display:table}
-.header_search form {
+.content:after {content:""; clear:both; display:table}
+.content form {
     display: flex;
     width: 100%;
     margin: 25px 0px 0px 0px;
     justify-content: center;
 }
-.header_search input {
+.content_search input {
     width: 305px;
     height: 42px;
     padding-left: 15px;
@@ -34,16 +79,11 @@ body {
     transition: .3s linear;
 }
 
-.header_search input::-webkit-input-placeholder {
+.content_search input::-webkit-input-placeholder {
     color: #FFFFFF80;
 }
 
-
-.header_search input:focus {
-    width: 300px;
-}
-
-.header_search button {
+.content_search button {
     display: flex;
     width: 19px;
     height: 42px;
@@ -53,90 +93,9 @@ body {
     align-items: center;
     margin: 0px 0px 0px 250px;
 }
-.header_search button:before {
+.content_search button:before {
     content: "\f002";
     font-family: FontAwesome;
     color: #324b4e;
-}
-
-.header_welcome {
-    display: flex;
-    height: 80px;
-    width: 100%;
-    justify-content: space-around;
-    margin: 60px 0px 15px 0px;
-}
-
-.header_welcome-text {
-    height: auto;
-    line-height: 1.5;
-}
-
-.header_welcome-text h1 {
-    margin: 0px;
-    color: #F9F9F9;
-}
-
-.header_welcome-text p {
-    margin-top: 5px;
-    margin: 0px;
-    color: #CECECE;
-}
-
-.welcome_image {
-    width: 77px;
-    height: 77px;
-}
-
-.wrapper{
-    background-image: url(../src/images/Maskgroup.png);
-    width: 428px;
-    height: 767px;
-    border-radius: 50px 50px 0px 0px;
-}
-
-
-
-.button_container{
-    display: flex;
-    width: 395px;
-    height: 115px;
-    justify-content: space-around;
-    margin: 0 auto;
-    padding: 28px 0px 10px 0px;
-}
-
-.icon_text{
-    display: flex;
-    justify-content: center;
-}
-
-
-.card_wrapper{
-    /* display: flex; */
-}
-
-.card_h1{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
-
-.mycard_h1{
-    font-size: 19px;
-}
-
-.card_container{
-    width: 378px;
-    height: 178px;
-    background-color: #7788B7;
-    margin: 25px 25px 25px 25px;
-
-}
-
-.card_block{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
