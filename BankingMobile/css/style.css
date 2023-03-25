@@ -1,10 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 body {
     margin: 0px;
-    width: 428px;
-    height: 967px;
-    background-image: url(../src/images/background.png);
+    width: 390px;
+    height: 844px;
+    background-color: #767DC8;
     background-repeat: no-repeat;
     font-family: "Golos Text";
+    
 }
 
 .buttonicon_a {
@@ -89,8 +95,8 @@ body {
 }
 
 .wrapper{
-    background-image: url(../src/images/Maskgroup.png);
-    width: 428px;
+    background: linear-gradient(to top ,#6189E6 , white);
+    width: 100%;
     height: 767px;
     border-radius: 50px 50px 0px 0px;
 }
@@ -127,11 +133,10 @@ body {
 }
 
 .card_container{
-    width: 378px;
-    height: 178px;
-    background-color: #7788B7;
-    margin: 25px 25px 25px 25px;
-
+    width: 100%;  
+    height: 100%;
+    background: #7788B7;
+   
 }
 
 .card_block{
