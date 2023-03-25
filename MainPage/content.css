@@ -368,3 +368,49 @@
     .financeDepotAbout-h{
         grid-area: financeDepotAbout-h;
     }
+
+.contentPaymentsWrapper{
+    grid-area: contentPaymentsWrapper;
+    display: grid;
+    grid-template-areas: 
+    "contentPaymentsQiwiWrapper contentPaymentsIconWrapper contentServicesWrapper";
+    grid-template-columns: 150px 150px 400px;
+    padding-top: 50px;
+    padding-left: 50px;
+    background-color:gray;
+}
+    .contentPaymentsQiwiWrapper{
+        grid-area: contentPaymentsQiwiWrapper;
+    }
+    .contentPaymentsIconWrapper{
+        grid-area: contentPaymentsIconWrapper;
+    }
+    .contentServicesWrapper{
+        grid-area: contentServicesWrapper;
+    }
+
+.contentTranslationWrapper{
+    display: grid;
+    grid-template-areas: 
+    "contentTranslation-h"
+    "contentTranslationClientWrapper";
+}
+    .contentTranslation-h{
+        grid-area: contentTranslation-h;
+    }
+        .contentTranslationClientWrapper{
+            display: grid;
+            grid-template-areas: 
+            "contentTranslationClient contentTranslationClient-h"
+            "contentTranslationClient contentTranslationClient-p";
+            grid-area: contentTranslationClientWrapper;
+        }
+            .contentTranslationClient-icon{
+                grid-area: contentTranslationClient-icon;
+            }
+            .contentTranslationClient-h{
+                grid-area: contentTranslationClient-h;
+            }
+            .contentTranslationClient-p{
+                grid-area: contentTranslationClient-p;
+            }
