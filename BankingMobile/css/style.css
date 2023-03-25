@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+
 body {
     margin: 0px;
     width: 390px;
@@ -12,19 +8,57 @@ body {
     font-family: "Golos Text";
     
 }
-.transfer {
+
+h1 {
     text-align: center;
     font-weight: bold;
     margin-top: 10%;
     font-size: 26px;
     color: #133E5E;
 }
-.container {
-    display:grid;
+.contentTranslationWrapper{
+    display: grid;
+    grid-template-areas: 
+    "contentTranslation-h"
+    "contentTranslationClientWrapper";
+    
+}
+    .contentTranslation-h{
+        grid-area: contentTranslation-h;
+    }
+        .contentTranslationClientWrapper{
+           
+            grid-template-areas: 
+            "contentTranslationYourNumber-icon contentTranslationClient-h"
+            "contentTranslationYourNumber-icon contentTranslationClient-p";
+            grid-area: contentTranslationClientWrapper;
+        }
+            .contentTranslationClient-icon{
+                grid-area: contentTranslationClient-icon;
+            }
+            .contentTranslationClient-h{
+                grid-area: contentTranslationClient-h;
+            }
+            .contentTranslationClient-p{
+                grid-area: contentTranslationClient-p;
+            }
+
+.contentTranslationClientWrapper {
+    background: linear-gradient(to top right ,#767DC8 , #CFD5E3);
+    grid-template-areas: "contentTranslationYourNumber-icon contentTranslationClient-h";
+}
+.contentTranslationYourNumberWrapper {
+    background: linear-gradient(to top right,#767DC8 , #CFD5E3);
+}
+.contentTranslationOtherPeopleWrapper {
+    background: linear-gradient(to top right,#767DC8 , #CFD5E3);
+}
+.contentTranslationOtherCountyWrapper {
+    background: linear-gradient(to top right ,#767DC8 , #CFD5E3);
 }
 .content_search {
     display: flex;
-    margin-top: 100%;
+    margin-top: 10%;
 }
 .content:after {content:""; clear:both; display:table}
 .content form {
