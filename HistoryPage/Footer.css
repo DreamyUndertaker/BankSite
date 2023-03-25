@@ -1,0 +1,100 @@
+.footerWrapper{
+    display: grid;
+    grid-template-areas: 
+    "footerTownNumberWrapper footerMobileNumberWrapper footerLinkSocialWebWrapper"
+    "footerMainDescriptionWrapper footerMainDescriptionWrapper footerMainDescriptionWrapper";
+    background-color: #ABB6D3;
+    text-align: center;
+}
+
+.footerTownNumberWrapper{
+    display: grid;
+    grid-template-areas: 
+    "footerTownNumber-number"
+    "footerTownNumberDescription-h"
+    "footerTownNumberDescription-p";
+    grid-template-rows: 25px 20px 25px;
+    grid-area: footerTownNumberWrapper;
+}
+    .footerTownNumber-number{
+        grid-area: footerTownNumber-number;
+    }
+    .footerTownNumberDescription-h{
+        grid-area: footerTownNumberDescription-h;
+    }
+    .footerTownNumberDescription-p{
+        grid-area: footerTownNumberDescription-p;
+    }
+
+.footerMobileNumberWrapper{
+    display: grid;
+    grid-template-areas: 
+    "footerMobileNumber-number"
+    "footerMobileNumberDescription-h";
+    grid-template-rows: 30px;
+    grid-area: footerMobileNumberWrapper;
+}
+    .footerMobileNumber-number{
+        grid-area: footerMobileNumber-number;
+    }
+    .footerMobileNumberDescription-h{
+        grid-area: footerMobileNumberDescription-h;
+    }
+
+.footerLinkSocialWebWrapper{
+    display: grid;
+    grid-template-areas: "footerLinkSocialWebImg-vk footerLinkSocialWebImg-telegram"
+    "footerLinkSocialWeb-description footerLinkSocialWeb-description";
+    grid-area: footerLinkSocialWebWrapper;
+    grid-template-columns: 40px 150px;
+    grid-template-rows: 20px;
+    padding-top: 18px;
+}
+    .footerLinkSocialWebImg-vk{
+        grid-area: footerLinkSocialWebImg-vk;
+    }
+    .footerLinkSocialWebImg-telegram{
+        grid-area: footerLinkSocialWebImg-telegram;
+    }
+    .footerLinkSocialWeb-description{
+        grid-area: footerLinkSocialWeb-description;
+    }
+        .footerLinkSocialWebImgVk-button{
+            background: url(../Materials/images/VkImage.png) no-repeat center;
+            height: 30px;
+            width: 30px;
+            border: 0px;
+            border-radius: 20px;
+        }
+            .footerLinkSocialWebImgVk-button:hover{
+                box-shadow: 0 0 20px #6633FF;
+            }
+        .footerLinkSocialWebImgTelegram-button{
+            background: url(../Materials/images/TelegramImage.png) no-repeat center;
+            height: 30px;
+            width: 30px;
+            border: 0px;
+            border-radius: 20px;
+        }
+            .footerLinkSocialWebImgTelegram-button:hover{
+                box-shadow: 0 0 20px #6633FF;
+            }
+
+.footerMainDescriptionWrapper{
+    display: grid;
+    grid-template-areas: 
+    "footerMainDescriptionAdress"
+    "footerMainDexscriptionLicense"
+    "footerMainDescriptionCompanyName";
+    grid-template-rows: 20px 50px;
+    grid-area: footerMainDescriptionWrapper;
+}
+    .footerMainDescriptionAdress{
+        grid-area: footerMainDescriptionAdress;
+    }
+    .footerMainDexscriptionLicense{
+        grid-area: footerMainDexscriptionLicense;
+    }
+    .footerMainDescriptionCompanyName{
+        grid-area: footerMainDescriptionCompanyName;
+    }
