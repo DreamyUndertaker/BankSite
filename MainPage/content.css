@@ -1,6 +1,8 @@
 .contentWrapper{
     display: grid;
-    grid-template-areas: "financeWrapper contentPaymentsWrapper";
+    grid-template-areas: 
+    "financeWrapper contentPaymentsWrapper"
+    "financeWrapper contentServicesWrapper";
     grid-template-columns: 300px auto;
 }
 
@@ -377,7 +379,7 @@
     "contentPaymentsQiwiWrapper contentPaymentsIconWrapper contentServicesWrapper"
     "contentTranslationWrapper contentTranslationWrapper contentTranslationWrapper";
     grid-template-columns: 150px 150px 400px;
-    grid-template-rows: 100px 200px;
+    grid-template-rows: 100px 350px;
     padding-top: 50px;
     padding-left: 50px;
     background-color:gray;
@@ -484,4 +486,176 @@
             }
             .contentTranslationOtherCounty-p{
                 grid-area: contentTranslationOtherCounty-p;
+            }
+
+.contentServicesWrapper{
+    display: grid;
+    grid-template-areas: 
+    "contentServices-h"
+    "contentServicesSearchWrapper"
+    "contentServicesIconsWrapper";
+    grid-area: contentServicesWrapper;
+    padding-left: 50px;
+    background-color:gray;
+}
+    .contentServices-h{
+        grid-area: contentServices-h;
+    }
+    .contentServicesSearchWrapper{
+        grid-area: contentServicesSearchWrapper;
+        max-width: 740px;
+    }
+        .contentServicesSearch-input{
+            border: 2px solid blue;
+            border-radius: 20px;
+            width: 500px;
+            height: 50px;
+        }
+    .contentServicesIconsWrapper{
+        display: grid;
+        grid-template-areas: 
+        "contentServicesIconsMobileWrapper contentServicesIconsHomeWrapper contentServicesIconsStateWrapper"
+        "contentServicesIconsWorkWrapper contentServicesIconsTransportWrapper contentServicesIconsEducationWrapper"
+        "contentServicesIconsHealthWrapper contentServicesIconsRequsitesWrapper contentServicesIconsCreditWrapper"
+        "contentServicesIconsCharityWrapper contentServicesIconsFunWrapper contentServicesIconsFunWrapper";
+        grid-area: contentServicesIconsWrapper;
+    }
+        .contentServicesIconsMobileWrapper{
+            display: grid;
+            grid-area: contentServicesIconsMobileWrapper;
+            grid-template-areas: 
+            "contentServicesIconsMobile-icon contentServicesIconsMobile-h"
+            ;
+        }
+            .contentServicesIconsMobile-icon{
+                grid-area: contentServicesIconsMobile-icon;
+                align-self: center;
+            }
+            .contentServicesIconsMobile-h{
+                grid-area: contentServicesIconsMobile-h;
+                
+            }
+        .contentServicesIconsHomeWrapper{
+            display: grid;
+            grid-area: contentServicesIconsHomeWrapper;
+            grid-template-areas: "contentServicesIconsHome-icon contentServicesIconsHome-h";
+        }
+            .contentServicesIconsHome-icon{
+                grid-area: contentServicesIconsHome-icon;
+                align-self: center;
+            }
+            .contentServicesIconsHome-h{
+                grid-area: contentServicesIconsHome-h;
+            }
+        .contentServicesIconsStateWrapper{
+            display: grid;
+            grid-template-areas: "contentServicesIconsState-icon contentServicesIconsState-h";
+            grid-area: contentServicesIconsStateWrapper;
+        }
+            .contentServicesIconsState-icon{
+                grid-area: contentServicesIconsState-icon;
+                align-items: center;
+            }
+            .contentServicesIconsState-h{
+                grid-area: contentServicesIconsState-h;
+            }
+        .contentServicesIconsWorkWrapper{
+            display: grid;
+            grid-template-areas: "contentServicesIconsWork-icon contentServicesIconsWork-h";
+            grid-area: contentServicesIconsWorkWrapper;
+        }
+            .contentServicesIconsWork-icon{
+                grid-area: contentServicesIconsWork-icon;
+                align-items: center;
+            }
+            .contentServicesIconsWork-h{
+                grid-area: contentServicesIconsWork-h;
+            }
+        .contentServicesIconsTransportWrapper{
+            display: grid;
+            grid-template-areas: 
+            "contentServicesIconsTransport-icon contentServicesIconsTransport-h";
+            grid-area: contentServicesIconsTransportWrapper;
+        }
+            .contentServicesIconsTransport-icon{
+                grid-area: contentServicesIconsTransport-icon;
+                align-self: center;
+            }
+            .contentServicesIconsTransport-h{
+                grid-area: contentServicesIconsTransport-h;
+            }
+        .contentServicesIconsEducationWrapper{
+            display: grid;
+            grid-template-areas: "contentServicesIconsEducation-icon contentServicesIconsEducation-h";
+            grid-area: contentServicesIconsEducationWrapper;
+        }
+            .contentServicesIconsEducation-icon{
+                grid-area: contentServicesIconsEducation-icon;
+                align-self: center;
+            }
+            .contentServicesIconsEducation-h{
+                grid-area: contentServicesIconsEducation-h;
+            }
+        .contentServicesIconsHealthWrapper{
+            display: grid;
+            grid-template-areas: "contentServicesIconsHealth-icon contentServicesIconsHealth-h";
+            grid-area: contentServicesIconsHealthWrapper;
+        }
+            .contentServicesIconsHealth-icon{
+                grid-area: contentServicesIconsHealth-icon;
+                align-self: center;
+            }
+            .contentServicesIconsHealth-h{
+                grid-area: contentServicesIconsHealth-h;
+            }
+        .contentServicesIconsRequsitesWrapper{
+            display: grid;
+            grid-template-areas: "contentServicesIconsRequsites-icon contentServicesIconsRequsites-h";
+            grid-area: contentServicesIconsRequsitesWrapper;
+        }
+            .contentServicesIconsRequsites-icon{
+                grid-area: contentServicesIconsRequsites-icon;
+                align-self: center;
+            }
+            .contentServicesIconsRequsites-h{
+                grid-area: contentServicesIconsRequsites-h;
+            }
+        .contentServicesIconsCreditWrapper{
+            display: grid;
+            grid-template-areas: "contentServicesIconsCredit-icon contentServicesIconsCredit-h";
+            grid-area: contentServicesIconsCreditWrapper;
+        }
+            .contentServicesIconsCredit-icon{
+                grid-area: contentServicesIconsCredit-icon;
+                align-self: center;
+            }
+            .contentServicesIconsCredit-h{
+                grid-area: contentServicesIconsCredit-h;
+                
+            }
+        .contentServicesIconsCharityWrapper{
+            display: grid;
+            grid-template-areas: "contentServicesIconsCharity-icon contentServicesIconsCharity-h";
+            grid-area: contentServicesIconsCharityWrapper;
+        }
+            .contentServicesIconsCharity-icon{
+                grid-area: contentServicesIconsCharity-icon;
+                align-self: center;
+            }
+            .contentServicesIconsCharity-h{
+                grid-area: contentServicesIconsCharity-h;
+            }
+        .contentServicesIconsFunWrapper{
+            display: grid;
+            grid-template-areas: "contentServicesIconsFun-icon contentServicesIconsFun-h";
+            grid-area: contentServicesIconsFunWrapper;
+            max-width:fit-content;
+        }
+            .contentServicesIconsFun-icon{
+                grid-area: contentServicesIconsFun-icon;
+                align-self: center;
+            }
+            .contentServicesIconsFun-h{
+                grid-area: contentServicesIconsFun-h;
+                padding-left: 115px;
             }
