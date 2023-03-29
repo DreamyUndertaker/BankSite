@@ -1,11 +1,23 @@
+body{
+    background: linear-gradient(#BEC9E3, #7395E5);
+
+}
+
+
+.financeWrapper{
+    margin-left: 30vh;
+}
+
 .mainСontent{
     display: flex;
     flex-direction: column;
+
+    margin-left: 10vh;
 }
 
 .statistics{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .graphicStatistics{
@@ -14,20 +26,29 @@
     background: #C1C4E6;
     border-radius: 20px;
     padding: 1em;
+    margin: 30px;
 }
 
+.graphicStatistics-General{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 
+}
 
 .graphicStatistics-General a{
     color: #4A861C;
+    margin-top: 4px;
 }
 
 .sum{
     font-size: 14px;
     font-weight: bold;
+    margin-top: 4px;
 }
 .order{
     font-size: 9px;
+    margin-top: 4px;
 }
 
 .graphicStatistics-scale{
@@ -62,4 +83,103 @@
     width: 10px;
     background: #ECB0C7;
     border-radius: 20px;
+}
+
+.first2 div{
+    display: flex;
+    justify-content:center;
+    height: 47px;
+    width: 10px;
+    background: #578867;
+    border-radius: 20px;
+}
+
+.second2 div{
+    height: 25px;
+    width: 10px;
+    background: #578867;
+    border-radius: 20px;
+}
+
+.third2 div{
+    height: 15px;
+    width: 10px;
+    background: #578867;
+    border-radius: 20px;
+}
+
+
+.historyBlockManagement-buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.historyBlockManagement-buttons div{
+    margin-left: 10px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 5px;
+
+    width: 30px;
+    height: 30px;
+    background: #FFDEE2;
+    border-radius: 30px;
+}
+
+.historyBlock{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    border-top: 1px #FFF solid;
+    padding: 5px;
+}
+
+.cost{
+    margin-left: 200px;
+}
+
+.historyBlockManagement{
+    margin-left: 30px;
+
+}
+
+.transactions{
+    margin: 30px;
+    width: 100%;
+}
+
+.date{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.gradient{
+    background: linear-gradient(to right, #8A90D1, 80%, #C9CBE9);
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    height: 200px;
+}
+
+.underlining{
+    border-bottom: 2px #BB68AA solid;
+}
+
+.historyBlockManagement-header{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.text1{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.text2{
+    color: #FFF;
 }
