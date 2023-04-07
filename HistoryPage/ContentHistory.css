@@ -116,6 +116,14 @@ body{
 
 .historyBlockManagement-buttons div{
     margin-left: 10px;
+    margin-top: 15px;
+    text-decoration: none;
+    color: rgba(0, 0, 0);
+}
+
+.historyBlockManagement-buttons a{
+    text-decoration: none;
+    color: rgba(0, 0, 0);
 }
 
 .icon{
@@ -182,4 +190,44 @@ body{
 
 .text2{
     color: #FFF;
+}
+
+
+
+.historyControlButtons{
+    display: flex;
+}
+
+.historyControlButtons div{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.historyControlButtons a{
+    text-decoration: none;
+    color: rgba(0, 0, 0);
+
+    margin-left: 5px;
+    margin-bottom: 5px;
+
+
+
+    min-width: 25px;
+
+    padding: 3px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: #7788B7 1px solid;
+}
+
+.historyControlButtons-newEntries{
+    display: flex;
+    margin-left: 30px;
+}
+
+.historyControlButtons-oldRecords{
+    display: flex;
+    margin-left: 73%;
+
 }
