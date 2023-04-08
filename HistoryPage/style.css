@@ -15,12 +15,37 @@
 
 .header{
     display: flex;
-
-    
     background-color: #B2B6E1;
     align-items:center;
-
 }
+
+.content_search {
+  display: flex;
+
+  
+  }
+  .content:after {content:""; clear:both; display:table}
+  .content form {
+  display: flex;
+  width: 100%;
+  flex-direction: row ;
+  justify-content: center;
+  }
+  .content_search input {
+  width: 200px;
+  height: 42px;
+  padding-left: 15px;
+  border-radius: 42px;
+  border: 2px solid #7788B770;
+  background: #8497cd;;
+  outline: none;
+  position: relative;
+  transition: .3s linear;
+  }
+  
+  .content_search input::-webkit-input-placeholder {
+  color: #FFFFFF80;
+  }
 
 .headerNavBar{
     display: flex;

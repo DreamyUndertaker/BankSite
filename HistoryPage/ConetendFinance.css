@@ -3,6 +3,7 @@
 }
 
 .financeWrapper{
+
     display: grid;
     grid-template-areas: 
     "financeHeader"
@@ -17,7 +18,13 @@
     "financeDepotWrapper";
     grid-area: financeWrapper;
     max-width: 300px;
-    background-color:darkgray;
+    color: #FFF;
+    border-radius: 25px;
+    padding: 5px;
+
+    background: linear-gradient(to bottom, #B6BAE2, #B8BBE3);
+
+
     padding-left: 10px;
     padding-right: 10px;;
 }
