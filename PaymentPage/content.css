@@ -105,9 +105,9 @@
     display: grid;
     grid-template-areas: 
     "financeContribution-h financeContribution-rollUpImg financeContribution-addImg"
-    "financeContribution-icon financeWalletAbout-h financeWalletAbout-h"
+    "financeContribution-icon financeContributionAbout-h financeContributionAbout-h"
     "financeContribution-icon financeContribution-about financeContribution-about";
-    grid-template-rows: 40px 20px 50px;
+    grid-template-rows: 40px 30px 50px;
     grid-area: financeContributionWrapper;
     
 }
@@ -120,11 +120,15 @@
         text-align: center;
         align-self: center;
         justify-self: center;;
+        margin-top: 10px;
+        padding-bottom: 10px;
         padding-top: 30px;
         padding-right: 45px;
+        padding-left: 30px;
     }
-    .financeWalletAbout-h{
-        grid-area: financeWalletAbout-h;
+    .financeContributionAbout-h{
+        grid-area: financeContributionAbout-h;
+        
     }
     .financeContribution-rollUpImg{
         grid-area: financeContribution-rollUpImg;

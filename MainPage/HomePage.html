@@ -1,13 +1,308 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../PaymentPage/Header.css">
+    <link rel="stylesheet" href="../PaymentPage/Footer.css">
+    <link rel="stylesheet" href="../MainPage/MainPageContent.css">
 </head>
 <body>
-    
+    <div class="headerWrapper">
+        <div class="headerLogoWrapper">
+            <a href="../MainPage/HomePage.html">
+                <img src="../Materials/images/Logo.png" alt="" class="headerLogoWrapper-logoImg">
+            </a>
+        </div>
+        <div class="headerNavBarWrapper">
+            <div class="headerNavBar-mainLink">
+                <span><a href="../MainPage/HomePage.html">Главная</a></span>
+            </div>
+            <div class="headerNavBar-paymentLink">
+                <span><a href="../PaymentPage/PaymentPage.html">Платежи и переводы</a></span>
+            </div>
+            <div class="headerNavBar-historyLink">
+                <span><a href="../HistoryPage/history.html">История</a></span>
+            </div>
+        </div>
+        <div class="headerSearchWrapper">
+            <div class="headerSearch-inputArea">
+                <input type="search" name="" id="" placeholder="Поиск">
+            </div>
+            <div class="headerSearch-Img">
+                <button type="button" class="headerSearchImg-button"></button>
+            </div>
+        </div>
+        <div class="headerAccountWrapper">
+            <div class="headerAccountWrapper-Img">
+                <img src="../Materials/images/AccountLogo.png" alt="">
+            </div>
+            <div class="headerAccountWrapper-Name">
+                Vasya Pupkin
+            </div>
+        </div>
+        <div class="headerExitWrapper">
+            <div>
+                <button type="button" class="headerExit-button"></button>
+            </div>
+        </div>
+    </div>
+    <div class="contentWrapper">
+        <div class="financeWrapper">
+            <div class="financeActionsWrapper">
+                <div class="financeActionsPaymentsWrapper">
+                    <div class="financeActionsPayments-icon">
+                        <img src="../Materials/images/Payment.png" alt="">
+                    </div>
+                    <div class="financeActionsPayments-article">
+                        <span><h4>Платежи</h4></span>
+                    </div>
+                </div>
+                <div class="financeActionsActionWrapper">
+                    <div class="financeActionsAction-icon">
+                        <img src="../Materials/images/Actions.png" alt="">
+                    </div>
+                    <div class="financeActionsAction-artole">
+                        <span><h4>Действия</h4></span>
+                    </div>
+                </div>
+                <div class="financeActionsCardWrapper">
+                    <div class="financeActionsCard-icon">
+                        <img src="../Materials/images/Card.png" alt="">
+                    </div>
+                    <div class="financeActionsCard-closeIcon">
+                        <img src="../Materials/images/CloseIcon.png" alt="">
+                    </div>
+                    <div class="financeActionsCard-article">
+                        Visa Digital <br>
+                        **0000 <br>
+                        Перевести 
+                    </div>
+                </div>
+            </div>
+            <div class="financeHeader">
+                <div class="financeHeader-h">
+                    <span><h2>Мои финансы</h2></span>
+                </div>
+                <div class="financeHeader-p">
+                    <span><p>Сервисы для полезных привычек</p></span>
+                </div>
+            </div>
+            <div class="financeWalletWrapper">
+                <div class="financeWallet-h">
+                    <span><h3>Кошелек</h3></span>
+                </div>
+                <div class="financeWallet-rollUpImg">
+                <img src="../Materials/images/ArrowImage.png" alt="">
+                </div>
+                <div class="financeWallet-addImg">
+                    <img src="../Materials/images/PlusImage.png" alt="">
+                </div>
+                <div class="financeWalletBalanceWrapper">
+                    <div class="financeWalletCards-logoMasterCard">
+                        <img src="../Materials/images/MasterCardLogo.png" alt="">
+                    </div>
+                    <div class="financeWalletCards-logoVisa">
+                        <img src="../Materials/images/VisaDigitalLogo.png" alt="">
+                    </div>
+                    <div class="financeWalletBalance-amountMasterCard">
+                        <span><h3>84,93</h3></span>
+                    </div>
+                    <div class="financeWalletBalance-amountVisa">
+                        <span><h3>84,93</h3></span>
+                    </div>
+                    <div class="financeWalletBalance-cardNameMasterCard">
+                        <span><h6>MasterCard Mass **0000</h6></span>
+                    </div>
+                    <div class="financeWalletBalance-cardNameVisa">
+                        <span><h6>Visa Digital **0000</h6></span>
+                    </div>
+                </div>
+            </div>
+            <div class="financeContributionWrapper">
+                <div class="financeContribution-h">
+                    <span><h3>Вклады и счета</h3></span>
+                </div>
+                <div class="financeContribution-rollUpImg">
+                    <img src="../Materials/images/ArrowImage.png" alt="">
+                </div>
+                <div class="financeContribution-addImg">
+                    <img src="../Materials/images/PlusImage.png" alt="">
+                </div>
+                <div class="financeContribution-icon">
+                    <img src="../Materials/images/ContributionIcon.png" alt="">
+                </div>
+                <div class="financeContributionAbout-h">
+                    <span><h3>6,8% годовых</h3></span>
+                </div>
+                <div class="financeContribution-about">
+                    <span><h6>
+                        Если впервые открыть <br>
+                        Накопительный счет
+                    </h6></span>
+                </div>
+            </div>
+            <div class="financeMetallBillsWrapper">
+                <div class="financeMetallBills-h">
+                    <span><h3>Металлические счета</h3></span>
+                </div>
+                <div class="financeMetallBills-rollUpImg">
+                    <img src="../Materials/images/ArrowImage.png" alt="">
+                </div>
+                <div class="financeMetalBills-addImg">
+                    <img src="../Materials/images/PlusImage.png" alt="">
+                </div>
+                <div class="financeMetallBills-icon">
+                    <img src="../Materials/images/MetallBillsIcon.png" alt="">
+                </div>
+                <div class="financeMetallBillsAbout-h">
+                    <span><h5>
+                        Откройте обезличенный
+                        металлический счет 
+                    </h5></span>
+                </div>
+                <div class="financeMetallBills-about">
+                    <span><h4>
+                        Бесплатное открытие и ведение
+                    </h4></span>
+                </div>
+            </div>
+            <div class="financeCreditWrapper">
+                <div class="financeCredit-h">
+                    <span><h3>Кредиты</h3></span>
+                </div>
+                <div class="financeCredit-rollUpImg">
+                    <img src="../Materials/images/ArrowImage.png" alt="">
+                </div>
+                <div class="financeCredit-addImg">
+                    <img src="../Materials/images/PlusImage.png" alt="">
+                </div>
+            </div>
+            <div class="financeGoalsWrapper">
+                <div class="financeGoals-h">
+                    <span><h3>Цели и конверты</h3></span>
+                </div>
+                <div class="financeGoals-rollUpImg">
+                    <img src="../Materials/images/ArrowImage.png" alt="">
+                </div>
+                <div class="financeGoals-addImg">
+                    <img src="../Materials/images/PlusImage.png" alt="">
+                </div>
+                <div class="financeGoalsAboutWrapper">
+                    <div class="financeGoalsAbout-logo">
+                        <img src="../Materials/images/GoalsLogo.png" alt="">
+                    </div>
+                    <div class="financeGoalsAbout-h">
+                        <span><h3>Создайте новую цель</h3></span>
+                    </div>
+                    <div class="financeGoalsAbout-about">
+                        <span><h4>Начните копить прямо сейчас</h4></span>
+                    </div>
+                </div>
+            </div>
+            <div class="financeInsuranceWrapper">
+                <div class="financeInsurance-h">
+                    <span><h3>Страховаание</h3></span>
+                </div>
+                <div class="financeInsurance-rollUpImg">
+                    <img src="../Materials/images/ArrowImage.png" alt="">
+                </div>
+                <div class="financeInsurance-addImg">
+                    <img src="../Materials/images/PlusImage.png" alt="">
+                </div>
+            </div>
+            <div class="financePensionsWrapper">
+                <div class="financePensions-h">
+                    <span><h3>Пенсии</h3></span>
+                </div>
+                <div class="financePensions-rollUpImg">
+                    <img src="../Materials/images/ArrowImage.png" alt="">
+                </div>
+                <div class="financePensions-addImg">
+                    <img src="../Materials/images/PlusImage.png" alt="">
+                </div>
+            </div>
+            <div class="financeInvestmentsWrapper">
+                <div class="financeInvestments-h">
+                    <span><h3>Инвестици</h3></span>
+                </div>
+                <div class="financeInvestments-rollUpImg">
+                    <img src="../Materials/images/ArrowImage.png" alt="">
+                </div>
+                <div class="financeInvestments-addImg">
+                    <img src="../Materials/images/PlusImage.png" alt="">
+                </div>
+            </div>
+            <div class="financeDepotWrapper">
+                <div class="financeDepot-h">
+                    <span><h3>Счета депо</h3></span>
+                </div>
+                <div class="financeDepot-rollUpImg">
+                    <img src="../Materials/images/ArrowImage.png" alt="">
+                </div>
+                <div class="financeDepot-addImg">
+                    <img src="../Materials/images/PlusImage.png" alt="">
+                </div>
+                <div class="financeDepot-icon">
+                    <img src="../Materials/images/DepotLogo.png" alt="">
+                </div>
+                <div class="financeDepotAbout-h">
+                    <span><h3>У вас нет счетов депо</h3></span>
+                </div>
+            </div>
+        </div>
+        <div class="contentSaleWrapper">
+            <img src="../Materials/images/Sale.png" alt="">
+        </div>
+    </div>
+    <div class="footerWrapper">
+        <div class="footerTownNumberWrapper">
+            <div class="footerTownNumber-number">
+                <span><h2>+7(495)500-55-50</h2></span>
+            </div>
+            <div class="footerTownNumberDescripion-h">
+                <span><h4>Для звонков</h4></span>
+            </div>
+            <div class="footerTownNumberDescription-p">
+                <span><h5>Из любой точки мира</h5></span>
+            </div>
+        </div>
+        <div class="footerMobileNumberWrapper">
+            <div class="footerMobileNumber-number">
+                <span><h2>509</h2></span>
+            </div>
+            <div class="footerMobileNumberDescription-h">
+                <span><h5>
+                    Для бесплатных <br>
+                    звонков с мобильных на <br>
+                    территории РФ
+                </h5></span>
+            </div>
+        </div>
+        <div class="footerLinkSocialWebWrapper">
+            <div class="footerLinkSocialWebImg-vk">
+                <button type="button" class="footerLinkSocialWebImgVk-button"></button>
+            </div>
+            <div class="footerLinkSocialWebImg-telegram">
+                <button type="button" class="footerLinkSocialWebImgTelegram-button"></button>
+            </div>
+            <div class="footerLinkSocialWeb-description">
+                <span><h4>Тарифы, лимиты и сроки</h4></span>
+            </div>
+        </div>
+        <div class="footerMainDescriptionWrapper">
+            <div class="footerMainDescriptionAdress">
+                <span><h3>Росиия, Москва, 117312 ул. Вавилова, д. 19</h3></span>
+            </div>
+            <div class="footerMainDexscriptionLicense">
+                <span><h3>Генеральная лицензия на осщуствление банковских операций от 11 августа 2015 года. Регистрационный номер - 1481. </h3></span>
+            </div>
+            <div class="footerMainDescriptionCompanyName">
+                <span><h3>2023 ПАО СпамБанк</h3></span>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
