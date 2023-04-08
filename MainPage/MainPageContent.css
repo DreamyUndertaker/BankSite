@@ -22,7 +22,10 @@
     "financeDepotWrapper";
     grid-area: financeWrapper;
     max-width: 300px;
-    background-color:darkgray;
+    background: linear-gradient(to bottom ,#bbbce3,#CFD5E3); 
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;     
     padding-left: 10px;
     padding-right: 10px;;
 }

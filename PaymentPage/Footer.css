@@ -3,7 +3,7 @@
     grid-template-areas: 
     "footerTownNumberWrapper footerMobileNumberWrapper footerLinkSocialWebWrapper"
     "footerMainDescriptionWrapper footerMainDescriptionWrapper footerMainDescriptionWrapper";
-    background-color: black;
+    background-color:#bbbce3;
     text-align: center;
 }
 
