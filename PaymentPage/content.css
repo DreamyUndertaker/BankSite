@@ -21,7 +21,9 @@
     "financeDepotWrapper";
     grid-area: financeWrapper;
     max-width: 300px;
-    background-color:darkgray;
+    background: linear-gradient(to bottom ,#bbbce3; , #CFD5E3); 
+    border-radius: 25px;
+    margin-top: 20px;
     padding-left: 10px;
     padding-right: 10px;;
 }
@@ -386,7 +388,6 @@
     grid-template-rows: 100px 350px;
     padding-top: 50px;
     padding-left: 50px;
-    background-color:gray;
 }
     .contentPaymentsQiwiWrapper{
         grid-area: contentPaymentsQiwiWrapper;
@@ -500,7 +501,7 @@
     "contentServicesIconsWrapper";
     grid-area: contentServicesWrapper;
     padding-left: 50px;
-    background-color:gray;
+    
 }
     .contentServices-h{
         grid-area: contentServices-h;

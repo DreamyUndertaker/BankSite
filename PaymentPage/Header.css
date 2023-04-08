@@ -3,29 +3,20 @@ body{
     margin-left: auto;
     margin-right: auto;
 
-    background-color: rgb(43, 43, 43);
+    background: linear-gradient(to top ,#6189E6 , #CFD5E3);
     color: white !important;
 }
-
-.headerSearchImg-button{
-    background: url("../Materials/images/Search.png") no-repeat center;
-    height: 33px;
-    width: 33px;
-    border: 0px;
-}
-    .headerSearchImg-button:hover{
-        box-shadow: 0 0 12px #6633FF;
-    }
 
 .headerWrapper{
     display: grid;
     grid-template-areas: 
     "headerLogoWrapper headerNavBarWrapper headerSearchWrapper headerAccountWrapper headerExit-button";
-    background-color:darkcyan;
+    background-color:#bbbce3;
     text-align: center;
     align-self: center;
     justify-self: center;
     padding-top: 10px;
+    border-radius: 10px;
 }
 
 
@@ -92,11 +83,42 @@ body{
     .headerSearch-inputArea{
         grid-area: headerSearch-inputArea;
         align-self: left;
-        padding-top: 7px;
+        padding-top: 3px;
     }
+        .headerSearchInputArea-input{
+            border-radius: 42px;
+            height: 30px;
+            width: 200px;
+            border: 2px solid #7788B770;
+            background: #8497cd;;
+            outline: none;
+            position: relative;
+            transition: .3s linear;
+        }
+            .headerSearchInputArea-input::-webkit-input-placeholder{color: #FFFFFF80;}
     .headerSearch-Img{
-        grid-area: headerSearch-Img;
+        width: 19px;
+        height: 42px;
+        background: none;
+        border: none;
+        position: absolute;
+        align-items: center;
+        margin: 0px 0px 0px 250px;
     }
+    .headerSearchImg-button{
+        background: url("../Materials/images/Search.png") no-repeat center;
+        height: 33px;
+        width: 33px;
+        border: 0px;
+    }
+        .headerSearchImg-button:hover{
+            box-shadow: 0 0 12px #6633FF;
+        }
+        .contentSearch-Img:before {
+            content: "\f002";
+            font-family: FontAwesome;
+            color: #324b4e;
+        }
     
 
 
